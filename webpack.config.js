@@ -9,20 +9,26 @@ module.exports ={
     module: {
         rules: [
             {
-                test: /\.js$/,
-                use : "babel-loader"
-            },
-            {
-                test: /\.css$/,
+                test: /\.jpe?g$/,
                 use : [
-                    {
-                       loader: "style-loader"
-                    },
-                    {
-                       loader: "css-loader"
-                    }
+                    "file-loader"
                 ]
             }
+            // {
+            //     test: /\.js$/,
+            //     use : "babel-loader"
+            // },
+            // {
+            //     test: /\.css$/,
+            //     use : [
+            //         {
+            //            loader: "style-loader"
+            //         },
+            //         {
+            //            loader: "css-loader"
+            //         }
+            //     ]
+            // }
         ]
     }
 }
