@@ -1,0 +1,1 @@
+console.log("Learning Webpack from Webpack Academy");
