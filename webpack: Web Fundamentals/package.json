@@ -5,8 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --verbose",
+    "build:log": "yarn build -- --env.foo=1 --env.bar=2",
     "watch": "yarn build -- --watch",
     "debug": "yarn build -- --env.debug=1"
+
   },
   "repository": {
     "type": "git",
